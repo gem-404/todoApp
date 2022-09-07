@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+
+    <body>
+        <h1> Hello </h1>
+
+        <script type="text/javascript">
+            // STORE TOKEN INTO LOCALSTORAGE
+            localStorage.setItem("token", "{{token}}");
+
+            document.getElementById('logout').onclick = function logout() {
+                let token = localStorage.getItem('token');
+
+                // use your favorite AJAX lib to send the token 
+                // to the server as e.g. JSON
+
+                // redirect user to e.g. landing page of app if 
+                // logout successful, show error otherwise
+            }
+        </script>
+    </body>
+</html>
